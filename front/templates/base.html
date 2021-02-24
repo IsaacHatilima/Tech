@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title> TechTitan </title>
+	<!-- Bootstrap core CSS -->
+	<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fontawesome CSS -->
+	<link href="../static/css/all.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="../static/css/owl.carousel.min.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="../static/css/jquery.fancybox.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="../static/css/style.css" rel="stylesheet">
+	<link rel="icon" href="../static/img/One.jpeg">
+</head>
+<body>
+<div class="wrapper-main">
+	<!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="social-media">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="contact-details">
+						<ul>
+							<li><i class="fas fa-phone fa-rotate-90"></i> +260 966 477 311</li>
+							<li><i class="fas fa-map-marker-alt"></i> Farm 32A , District Road, Lusaka</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light top-nav">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+				<img src="../static/img/Logo.jpeg" alt="logo" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link {%block link1%} {%endblock%} " href="{% url 'home' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a  class="nav-link {%block link2%} {%endblock%} " href="{% url 'about' %}">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link {%block link3%} {%endblock%} " href="{% url 'services' %}">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link {%block link4%} {%endblock%} " href="{% url 'contact' %}">Contact</a>
+					</li>
+				</ul>
+            </div>
+        </div>
+    </nav>
+	
+    {%block body%}
+
+	
+	{%endblock%}
+	
+	<!-- Contact Us -->
+	<div class="touch-line">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+				   <p>Tomorrows Technology Today. We wont break your bank we promise!</p>
+				</div>
+				<div class="col-md-4">
+				   <a class="btn btn-lg btn-secondary btn-block" href="{% url 'contact' %}"> Contact Us </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <!-- /.container -->
+    <!--footer starts from here-->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col">
+					<h5 class="headin5_amrc col_white_amrc pt2">About Us</h5>
+					<!--headin5_amrc-->
+					<p class="mb10">TechTitan is a young firm that exist to help you business or organaisation attain it's professional status it deserves.</p>
+					<ul class="footer-social">
+						<li><a class="facebook hb-xs-margin" href="#"><span class="hb hb-xs spin hb-facebook"><i class="fab fa-facebook-f"></i></span></a></li>
+						<li><a class="twitter hb-xs-margin" href="#"><span class="hb hb-xs spin hb-twitter"><i class="fab fa-twitter"></i></span></a></li>
+					</ul>
+				</div>	
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+					<!--headin5_amrc-->
+					<ul class="footer_ul_amrc">
+						<li><a href="{% url 'home' %}"><i class="fas fa-long-arrow-alt-right"></i>Home</a></li>
+						<li><a href="{% url 'about' %}"><i class="fas fa-long-arrow-alt-right"></i>About Us</a></li>
+						<li><a href="{% url 'services' %}"><i class="fas fa-long-arrow-alt-right"></i>Our Services</a></li>
+						<li><a href="{% url 'contact' %}"><i class="fas fa-long-arrow-alt-right"></i>Get In Touch</a></li>
+					</ul>
+					<!--footer_ul_amrc ends here-->
+				</div>
+			</div>
+		</div>
+        <div class="container">
+            <p class="copyright text-center">All Rights Reserved. &copy; <script> var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear) </script>
+            </p>
+        </div>
+    </footer>
+</div>
+	  
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/imagesloaded.pkgd.min.js"></script>
+<script src="../static/js/isotope.pkgd.min.js"></script>
+<script src="../static/js/filter.js"></script>
+<script src="../static/js/jquery.appear.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.fancybox.min.js"></script>
+<script src="../static/js/script.js"></script>
+</body>
+</html>

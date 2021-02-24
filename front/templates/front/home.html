@@ -1,0 +1,130 @@
+{%extends '../base.html'%}
+
+{%block link1%}  active {%endblock%}
+
+{%block body%}
+
+
+    <header class="slider-main">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <!-- Slide One - Set the background image for this slide in the line below -->
+               <div class="carousel-item active" style="background-image: url('../static/img/slides/business.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Reach Them All</h3>
+                     <p>An Online Presence That Gets People Talking</p>
+                  </div>
+               </div>
+               <!-- Slide Two - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('../static/img/slides/analysis.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Check Growth.</h3>
+                     <p>Tailor Made Monitoring Systems To Track Growth</p>
+                  </div>
+               </div>
+               <!-- Slide Three - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('../static/img/slides/contact-us.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Communicate Like A Pro</h3>
+                     <p>With A Domain of Your Own, Be Classy</p>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+	
+    <!-- Page Content -->
+    <div class="container">        
+        <!-- About Section -->
+        <div class="about-main">
+            <div class="row">
+               <div class="col-lg-6">
+                  <h2>Welcome to TechTitan</h2>
+                  <p>TechTitan is a young ICT startup company aimed at making your business have the online pressence and automation it deserves.</p>
+                  <p>Look to us for you various services ranging from web development to IT Consultation. We got you covered.</p>
+				  <h5>Our smart approach</h5>
+                  <ul>
+                     <li>Affordable rates, because we care.</li>
+                     <li>Unique products, because you deserve it.</li>
+                     <li>And Most importantly, attention to detail because why not.</li>                     
+                  </ul>
+               </div>
+               <div class="col-lg-6">
+                  <img class="img-fluid rounded" src="../static/img/FullLogo.jpeg" alt="" />
+               </div>
+            </div>
+            <!-- /.row -->
+        </div>
+	</div>	
+	
+	<div class="services-bar">
+		<div class="container">
+			<h1 class="py-4">Our Services </h1>
+			<div class="row">
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="../static/img/services/web-design.jpg" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> <a href="" class="colors">Wed Design and Development</a> </h4>
+							<p class="card-text">We Design and Develope Websites that fit your needs and business to give you that needed online presence.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="../static/img/services/webdesign.jpg" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> <a href="" class="colors">Applications</a> </h4>
+							<p class="card-text">We develope applications that will strive towards automating your business after all, you need the realtime view of your business progress.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="../static/img/services/email.png" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> <a href="" class="colors">Email Hosting</a> </h4>
+							<p class="card-text">We host email at very competitive rate. Why use @gmail.com or @yahoo.com when you can have @yourbusinessname.com. Communicate like a professional with us.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="../static/img/services/consult.jpg" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> <a href="" class="colors">Consultation</a> </h4>
+							<p class="card-text">For all your IT Projects, do not hesitate to get in touch with us for a second opinion on how to get things done.</p>
+						</div>						
+					</div>
+			   </div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+
+{%endblock%}
